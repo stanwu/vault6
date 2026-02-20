@@ -57,6 +57,12 @@ Includes DB encryption verification:
 
 This uses `electron-builder`.
 
+## License
+
+MIT
+
+本專案 100% 由 Codex 產生
+
 ## Next iterations
 
 - Item CRUD + field-level AEAD payload encryption with `vaultKey`
