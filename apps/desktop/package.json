@@ -1,0 +1,38 @@
+{
+  "name": "@vault6/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "package": "npm run build && electron-builder",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@vault6/core": "0.1.0",
+    "@vault6/db": "0.1.0",
+    "@vault6/shared": "0.1.0",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "electron": "^37.4.0",
+    "electron-vite": "^4.0.0"
+  },
+  "build": {
+    "appId": "com.vault6.app",
+    "files": [
+      "dist/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "mac": {
+      "target": ["dmg"]
+    },
+    "win": {
+      "target": ["nsis"]
+    }
+  }
+}

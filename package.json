@@ -1,0 +1,22 @@
+{
+  "name": "vault6-poc",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @vault6/desktop",
+    "build": "npm run build --workspace @vault6/renderer && npm run build --workspace @vault6/desktop",
+    "test": "npm run test --workspaces --if-present",
+    "package": "npm run package --workspace @vault6/desktop",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "devDependencies": {
+    "electron-builder": "^26.0.12",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

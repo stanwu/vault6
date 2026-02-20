@@ -1,0 +1,11 @@
+{
+  "vaultId": "6621084a-45a7-40f6-9014-daba47116f5e",
+  "vaultName": "Personal",
+  "saltB64": "0IFZnNhDxpVJTviLc77+cA==",
+  "kdf": {
+    "memoryKiB": 65536,
+    "iterations": 3,
+    "parallelism": 1,
+    "outputLen": 32
+  }
+}

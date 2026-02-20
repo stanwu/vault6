@@ -1,0 +1,173 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+  background: #f6f7f9;
+  color: #1f252d;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.lock-screen {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: #f6f7f9;
+}
+
+.lock-card {
+  width: min(520px, 92vw);
+  background: #ffffff;
+  border: 1px solid #d8dde4;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 16px 40px rgba(31, 37, 45, 0.1);
+  display: grid;
+  gap: 10px;
+  color: #1f252d;
+}
+
+.lock-card label {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.lock-card input {
+  border: 1px solid #c4ccd6;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  border: 1px solid #c4ccd6;
+  background: #ffffff;
+  color: #1f252d;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+.error {
+  color: #bd2e2e;
+  font-size: 13px;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: 260px 320px 1fr;
+  height: 100%;
+  background: #f6f7f9;
+  color: #1f252d;
+}
+
+.pane {
+  border-right: 1px solid #d8dde4;
+  background: #ffffff;
+  min-width: 0;
+}
+
+.detail-pane {
+  border-right: 0;
+}
+
+.pane-header {
+  padding: 12px;
+  border-bottom: 1px solid #d8dde4;
+  font-weight: 600;
+}
+
+.detail-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar {
+  background: #f3f5f8;
+}
+
+.vault-btn {
+  margin: 10px 12px;
+  width: calc(100% - 24px);
+  text-align: left;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #d9e7ff;
+}
+
+.group-title {
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #52606d;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.simple-list,
+.items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.simple-list li {
+  padding: 8px 12px;
+}
+
+.search {
+  width: 100%;
+  border: 1px solid #c4ccd6;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.item {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eef2f6;
+  cursor: pointer;
+}
+
+.item.selected {
+  background: #e8f0ff;
+}
+
+.item-title {
+  font-weight: 600;
+}
+
+.item-subtitle {
+  color: #52606d;
+  font-size: 13px;
+}
+
+.detail-body {
+  padding: 16px;
+}
+
+.field-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eef2f6;
+  padding: 10px 0;
+}
+
+.empty {
+  padding: 16px;
+  color: #52606d;
+}
