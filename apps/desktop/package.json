@@ -16,7 +16,7 @@
     "zod": "^4.1.5"
   },
   "devDependencies": {
-    "electron": "37.10.3",
+    "electron": "39.8.4",
     "electron-vite": "^4.0.0"
   },
   "build": {
